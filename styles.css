@@ -58,8 +58,7 @@ body {
     margin-top: 50px;
     font-family: Arial, sans-serif;
     background-color:rgb(185, 154, 11);
-    justify-content: center;
-    text-align: center;
+    min-height: 100%;
 }
 
 #navbar {
@@ -70,17 +69,17 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(226, 250, 9); /* Color de fondo */
+    background-color: rgb(226, 250, 9);
     color: rgb(0, 0, 0);
     padding: 10px;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */  
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Asegura que los elementos estén en línea */
+    display: flex;
     gap: 20px;
 }
 
@@ -90,8 +89,56 @@ section {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    text-align: center;
 }
 
 section h2 {
     color: rgb(0, 0, 0);
+}
+
+
+#Project-1, #Project-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.project-item h3 {
+    text-align: left;
+}
+
+.project-item a {
+    text-align: right;
+}
+
+aside {
+    width: 8vw;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: center; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+
+aside ul{
+    list-style: none;
+    margin-right: 25%;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    margin-top: auto;
+    padding: 10px;
 }
